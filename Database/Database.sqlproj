@@ -92,5 +92,16 @@
     <Build Include="dbo\Tables\Fractions.sql" />
     <Build Include="dbo\Tables\CasusBelliTypes.sql" />
     <Build Include="dbo\Tables\CasusBellies.sql" />
+    <Build Include="dbo\Tables\TitleCultures.sql" />
+    <Build Include="dbo\Tables\SettlementEpidemics.sql" />
+    <Build Include="dbo\Tables\Lifestyles.sql" />
+    <Build Include="dbo\Tables\HumanLifestyles.sql" />
+    <Build Include="dbo\Tables\HumanEducations.sql" />
+    <Build Include="dbo\Tables\FractionParticipants.sql" />
+    <Build Include="dbo\Tables\FractionAims.sql" />
+    <Build Include="dbo\Tables\EpidemicTypes.sql" />
+    <Build Include="dbo\Tables\Epidemics.sql" />
+    <Build Include="dbo\Tables\EducationType.sql" />
+    <Build Include="dbo\Tables\Education.sql" />
   </ItemGroup>
 </Project>

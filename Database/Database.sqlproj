@@ -56,5 +56,61 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Wars.sql" />
+    <Build Include="dbo\Tables\Traits.sql" />
+    <Build Include="dbo\Tables\TitleTypes.sql" />
+    <Build Include="dbo\Tables\Titles.sql" />
+    <Build Include="dbo\Tables\SettlementTypes.sql" />
+    <Build Include="dbo\Tables\Settlements.sql" />
+    <Build Include="dbo\Tables\ReligiousAssociations.sql" />
+    <Build Include="dbo\Tables\ReligionTitleTypes.sql" />
+    <Build Include="dbo\Tables\Religions.sql" />
+    <Build Include="dbo\Tables\Marriages.sql" />
+    <Build Include="dbo\Tables\HumanWealths.sql" />
+    <Build Include="dbo\Tables\HumanTraits.sql" />
+    <Build Include="dbo\Tables\Humans.sql" />
+    <Build Include="dbo\Tables\DynastyHeads.sql" />
+    <Build Include="dbo\Tables\Dynasties.sql" />
+    <Build Include="dbo\Tables\Cultures.sql" />
+    <Build Include="dbo\Tables\BuildingTypes.sql" />
+    <Build Include="dbo\Tables\Buildings.sql" />
+    <Build Include="dbo\Tables\Accounts.sql" />
+    <Build Include="dbo\Tables\AccountPasswords.sql" />
+    <Build Include="dbo\Tables\Unions.sql" />
+    <Build Include="dbo\Tables\TitleUnions.sql" />
+    <Build Include="dbo\Tables\PlotTypes.sql" />
+    <Build Include="dbo\Tables\Plots.sql" />
+    <Build Include="dbo\Tables\Opinions.sql" />
+    <Build Include="dbo\Tables\HumanPlots.sql" />
+    <Build Include="dbo\Tables\HumanActivities.sql" />
+    <Build Include="dbo\Tables\HumanAbilities.sql" />
+    <Build Include="dbo\Tables\Friendships.sql" />
+    <Build Include="dbo\Tables\Fractions.sql" />
+    <Build Include="dbo\Tables\CasusBelliTypes.sql" />
+    <Build Include="dbo\Tables\CasusBellies.sql" />
+    <Build Include="dbo\Tables\TitleCultures.sql" />
+    <Build Include="dbo\Tables\SettlementEpidemics.sql" />
+    <Build Include="dbo\Tables\Lifestyles.sql" />
+    <Build Include="dbo\Tables\HumanLifestyles.sql" />
+    <Build Include="dbo\Tables\HumanEducations.sql" />
+    <Build Include="dbo\Tables\FractionParticipants.sql" />
+    <Build Include="dbo\Tables\FractionAims.sql" />
+    <Build Include="dbo\Tables\EpidemicTypes.sql" />
+    <Build Include="dbo\Tables\Epidemics.sql" />
+    <Build Include="dbo\Tables\EducationType.sql" />
+    <Build Include="dbo\Tables\Education.sql" />
+    <Build Include="dbo\Tables\Modificators.sql" />
+    <Build Include="dbo\Tables\HumanModificators.sql" />
+    <Build Include="dbo\Tables\EventTypeTraits.sql" />
+    <Build Include="dbo\Tables\EventTypes.sql" />
+    <Build Include="dbo\Tables\Events.sql" />
+    <Build Include="dbo\Tables\Choices.sql" />
+    <Build Include="dbo\Tables\TraitAbilities.sql" />
+    <Build Include="dbo\Tables\RequiredForModificatorTraits.sql" />
+    <Build Include="dbo\Tables\RequiredForModificatorAbilities.sql" />
   </ItemGroup>
 </Project>

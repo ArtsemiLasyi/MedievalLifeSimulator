@@ -58,6 +58,9 @@
     <Folder Include="Properties" />
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Stored procedures" />
+    <Folder Include="dbo\Views" />
+    <Folder Include="dbo\Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Wars.sql" />
@@ -112,5 +115,20 @@
     <Build Include="dbo\Tables\TraitAbilities.sql" />
     <Build Include="dbo\Tables\RequiredForModificatorTraits.sql" />
     <Build Include="dbo\Tables\RequiredForModificatorAbilities.sql" />
+    <Build Include="dbo\Stored procedures\RecognizeMother.sql" />
+    <Build Include="dbo\Stored procedures\RecognizeFather.sql" />
+    <Build Include="dbo\Stored procedures\JoinTheReligiousAssociation.sql" />
+    <Build Include="dbo\Stored procedures\CreateNewHuman.sql" />
+    <Build Include="dbo\Stored procedures\ChangeWealthForEveryone.sql" />
+    <Build Include="dbo\Views\HumanInfo.sql" />
+    <Build Include="dbo\Stored procedures\SetNewDynastyHead.sql" />
+    <Build Include="dbo\Views\WarInfo.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="dbo\Scripts\InitialTraits.sql" />
+    <None Include="dbo\Scripts\InitialReligions.sql" />
+    <None Include="dbo\Scripts\InitialTitleTypes.sql" />
+    <None Include="dbo\Scripts\InitialCultures.sql" />
+    <None Include="dbo\Scripts\InitialLifestyles.sql" />
   </ItemGroup>
 </Project>

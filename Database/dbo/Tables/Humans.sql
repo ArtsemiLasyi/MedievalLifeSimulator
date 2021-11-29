@@ -13,3 +13,11 @@
     CONSTRAINT [FK_Humans_Humans_Mother] FOREIGN KEY ([MotherId]) REFERENCES [dbo].[Humans] ([Id])
 );
 
+
+GO
+
+CREATE INDEX [IX_Humans_DynastyId] ON [dbo].[Humans] ([DynastyId])
+
+GO
+
+CREATE NONCLUSTERED INDEX [IX_Humans_Id_Alive] ON [dbo].[Humans] ([Id]) WHERE [Alive] = 1

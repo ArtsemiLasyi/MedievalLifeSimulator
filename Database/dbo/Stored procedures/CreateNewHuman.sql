@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[CreateNewHuman]
-    @param1 int = 0,
+    @ int = 0,
     @param2 int
 AS
     SELECT @param1, @param2

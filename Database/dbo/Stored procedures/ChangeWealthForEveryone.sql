@@ -1,4 +1,6 @@
 ﻿CREATE PROCEDURE [dbo].[ChangeWealthForEveryone]
 AS
-    
-RETURN 0
+    UPDATE
+        [HumanWealths] 
+    SET [GoldNumber] = [GoldNumber] + GetIncomeFor([HumanWealths].[HumanId])
+RETURN 0;

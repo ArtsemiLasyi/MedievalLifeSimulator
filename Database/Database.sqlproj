@@ -61,6 +61,8 @@
     <Folder Include="dbo\Stored procedures" />
     <Folder Include="dbo\Views" />
     <Folder Include="dbo\Scripts" />
+    <Folder Include="dbo\Functions" />
+    <Folder Include="dbo\Triggers" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Wars.sql" />
@@ -123,6 +125,24 @@
     <Build Include="dbo\Views\HumanInfo.sql" />
     <Build Include="dbo\Stored procedures\SetNewDynastyHead.sql" />
     <Build Include="dbo\Views\WarInfo.sql" />
+    <Build Include="dbo\Views\TraitInfo.sql" />
+    <Build Include="dbo\Functions\GetNumberOfSoldiersFor.sql" />
+    <Build Include="dbo\Tables\SettlementWays.sql" />
+    <Build Include="dbo\Functions\GetFractionPower.sql" />
+    <Build Include="dbo\Functions\GetGoldIncomeFor.sql" />
+    <Build Include="dbo\Views\DemesneInfo.sql" />
+    <Build Include="dbo\Functions\GetResultFromProbability.sql" />
+    <Build Include="dbo\Stored procedures\AddNewBuilding.sql" />
+    <Build Include="dbo\Stored procedures\ImproveBuilding.sql" />
+    <Build Include="dbo\Triggers\CheckJoinFraction.sql" />
+    <Build Include="dbo\Views\PlotInfo.sql" />
+    <Build Include="dbo\Triggers\CheckJoinPlot.sql" />
+    <Build Include="dbo\Functions\GetPrestigeIncomeFor.sql" />
+    <Build Include="dbo\Views\TitleInfo.sql" />
+    <Build Include="dbo\Functions\GetGenealogicTreeFor.sql" />
+    <Build Include="dbo\Stored procedures\TryToIll.sql" />
+    <Build Include="dbo\Stored procedures\TryToSpread.sql" />
+    <Build Include="dbo\Functions\GetResultFrom.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="dbo\Scripts\InitialTraits.sql" />
@@ -130,5 +150,8 @@
     <None Include="dbo\Scripts\InitialTitleTypes.sql" />
     <None Include="dbo\Scripts\InitialCultures.sql" />
     <None Include="dbo\Scripts\InitialLifestyles.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Database.refactorlog" />
   </ItemGroup>
 </Project>

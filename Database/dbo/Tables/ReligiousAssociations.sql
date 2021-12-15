@@ -7,6 +7,3 @@
     CONSTRAINT [CK_ReligiousAssociations_PointsToUpgradeRank] CHECK ([PointsToUpgradeRank]>(0)),
     CONSTRAINT [FK_ReligiousAssociations_Religions] FOREIGN KEY ([ReligionId]) REFERENCES [dbo].[Religions] ([Id])
 );
-
-
-

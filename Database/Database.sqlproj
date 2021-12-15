@@ -9,8 +9,7 @@
     <ProjectGuid>{e1138157-24c4-4ead-8df3-c27fd2fdb073}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
-    <RootPath>
-    </RootPath>
+    <RootPath />
     <RootNamespace>Database</RootNamespace>
     <AssemblyName>Database</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
@@ -48,7 +47,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
-    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
     <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
     <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
   </PropertyGroup>
@@ -134,15 +132,20 @@
     <Build Include="dbo\Functions\GetResultFromProbability.sql" />
     <Build Include="dbo\Stored procedures\AddNewBuilding.sql" />
     <Build Include="dbo\Stored procedures\ImproveBuilding.sql" />
-    <Build Include="dbo\Triggers\CheckJoinFraction.sql" />
+    <Build Include="dbo\Triggers\CheckFractionParticipantsModify.sql" />
     <Build Include="dbo\Views\PlotInfo.sql" />
-    <Build Include="dbo\Triggers\CheckJoinPlot.sql" />
+    <Build Include="dbo\Triggers\CheckHumanPlotsModify.sql" />
     <Build Include="dbo\Functions\GetPrestigeIncomeFor.sql" />
     <Build Include="dbo\Views\TitleInfo.sql" />
     <Build Include="dbo\Functions\GetGenealogicTreeFor.sql" />
     <Build Include="dbo\Stored procedures\TryToIll.sql" />
-    <Build Include="dbo\Stored procedures\TryToSpread.sql" />
-    <Build Include="dbo\Functions\GetResultFrom.sql" />
+    <Build Include="dbo\Stored procedures\TryToSpreadEpidemics.sql" />
+    <Build Include="dbo\Functions\GetPrestige.sql" />
+    <Build Include="dbo\Tables\AccountHumans.sql" />
+    <Build Include="dbo\Triggers\CheckHumanLifestylesModify.sql" />
+    <Build Include="dbo\Tables\HumanNames.sql" />
+    <Build Include="dbo\Functions\GetRandomName.sql" />
+    <Build Include="dbo\Views\MapInfo.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="dbo\Scripts\InitialTraits.sql" />

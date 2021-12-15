@@ -2,7 +2,7 @@
     [HumanId]                    BIGINT NOT NULL,
     [ReligionId]                 INT    NOT NULL,
     [ReligiousAssociationId]     INT    NULL,
-    [religiousAssociationPoints] INT    NULL,
+    [ReligiousAssociationPoints] INT    NULL,
     CONSTRAINT [PK_HumanActivities] PRIMARY KEY CLUSTERED ([HumanId] ASC),
     CONSTRAINT [CK_HumanActivities_ReligiousAssociationPoints] CHECK ([ReligiousAssociationPoints]>=(0)),
     CONSTRAINT [FK_HumanActivities_Humans] FOREIGN KEY ([HumanId]) REFERENCES [dbo].[Humans] ([Id]),
@@ -11,3 +11,7 @@
 
 
 
+
+GO
+
+CREATE INDEX [IX_HumanActivities_ReligiousAssociationId_ReligiousAssociationPoints] ON [dbo].[HumanActivities] ([ReligiousAssociationId], [ReligiousAssociationPoints])

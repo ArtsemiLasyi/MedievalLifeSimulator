@@ -14,3 +14,7 @@
 
 
 
+
+GO
+
+CREATE INDEX [IX_Titles_DeFactoSuzerenId] ON [dbo].[Titles] ([DeFactoSuzerenId])

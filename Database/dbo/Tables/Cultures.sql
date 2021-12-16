@@ -4,3 +4,6 @@
     CONSTRAINT [PK_Cultures] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
+GO
+
+CREATE UNIQUE INDEX [UQ_Cultures_Name] ON [dbo].[Cultures] ([Name])

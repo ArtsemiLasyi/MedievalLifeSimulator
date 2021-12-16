@@ -5,7 +5,7 @@ BEGIN
     DECLARE @fractionPower INT;
 
     SELECT
-        @fractionPower = SUM(GetNumberOfSoldiersFor([Titles].[RulerId]))
+        @fractionPower = SUM([dbo].[GetNumberOfSoldiersFor]([Titles].[RulerId]))
     FROM
         [FractionParticipants]
     JOIN [Titles]

@@ -146,6 +146,14 @@
     <Build Include="dbo\Tables\HumanNames.sql" />
     <Build Include="dbo\Functions\GetRandomName.sql" />
     <Build Include="dbo\Views\MapInfo.sql" />
+    <Build Include="dbo\Stored procedures\GenerateWorld.sql" />
+    <Build Include="dbo\Tables\DynastyNames.sql" />
+    <Build Include="dbo\Tables\Armies.sql" />
+    <Build Include="dbo\Tables\HumanEpidemics.sql" />
+    <Build Include="dbo\Functions\GetRandomGender.sql" />
+    <Build Include="dbo\Stored procedures\ChangePrestigeForEveryone.sql" />
+    <Build Include="dbo\Views\RandWrapper.sql" />
+    <Build Include="dbo\Functions\GetRandom.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="dbo\Scripts\InitialTraits.sql" />
@@ -155,6 +163,7 @@
     <None Include="dbo\Scripts\InitialLifestyles.sql" />
   </ItemGroup>
   <ItemGroup>
-    <RefactorLog Include="Database.refactorlog" />
+    <None Include="dbo\Scripts\InitialDynastyNames.sql" />
+    <None Include="dbo\Scripts\InitialHumanNames.sql" />
   </ItemGroup>
 </Project>

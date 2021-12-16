@@ -4,3 +4,7 @@
     CONSTRAINT [PK_CasusBelliTypes] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
+
+GO
+
+CREATE UNIQUE INDEX [UQ_CasusBelliTypes_Name] ON [dbo].[CasusBelliTypes] ([Name])

@@ -4,3 +4,7 @@
     CONSTRAINT [PK_FractionAims] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
+
+GO
+
+CREATE UNIQUE INDEX [UQ_FractionAims_Name] ON [dbo].[FractionAims] ([Name])

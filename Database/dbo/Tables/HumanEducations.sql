@@ -5,7 +5,7 @@
     [EducatorId]  BIGINT NULL,
     CONSTRAINT [PK_HumanEducations] PRIMARY KEY CLUSTERED ([HumanId] ASC),
     CONSTRAINT [FK_HumanEducations_Cultures] FOREIGN KEY ([CultureId]) REFERENCES [dbo].[Cultures] ([Id]),
-    CONSTRAINT [FK_HumanEducations_Education] FOREIGN KEY ([EducationId]) REFERENCES [dbo].[Education] ([EducationTypeId]),
+    CONSTRAINT [FK_HumanEducations_Educations] FOREIGN KEY ([EducationId]) REFERENCES [dbo].[Educations] ([EducationTypeId]),
     CONSTRAINT [FK_HumanEducations_Humans] FOREIGN KEY ([HumanId]) REFERENCES [dbo].[Humans] ([Id]),
     CONSTRAINT [FK_HumanEducations_Humans1] FOREIGN KEY ([EducatorId]) REFERENCES [dbo].[Humans] ([Id])
 );

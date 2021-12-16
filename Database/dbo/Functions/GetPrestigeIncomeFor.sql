@@ -2,9 +2,7 @@
 RETURNS INT
 AS
 BEGIN
-    
     DECLARE @income INT;
-
     SELECT
         @income = SUM([TitleTypes].[Level])
     FROM
@@ -12,9 +10,8 @@ BEGIN
     JOIN [Titles]
         ON [Humans].[Id] = [Titles].[RulerId]
     JOIN [TitleTypes]
-        ON [].[TitleId] = [Titles].[Id]
+        ON [TitleTypes].[Id] = [Titles].[TitleTypeId]
     WHERE 
         [Humans].[Id] = @humanId
-
     RETURN @income;
 END

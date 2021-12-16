@@ -4,3 +4,8 @@
     CONSTRAINT [PK_Traits] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
+
+GO
+
+CREATE UNIQUE INDEX [UQ_Traits_Name] ON [dbo].[Traits] ([Name])
+

@@ -7,8 +7,9 @@
 
 
 
+GO
 
-
+CREATE UNIQUE INDEX [UQ_Religions_Name] ON [dbo].[Religions] ([Name]);
 
 GO
 CREATE NONCLUSTERED INDEX [IXFK_Religions_Humans]

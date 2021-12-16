@@ -4,9 +4,15 @@
     [BaseIncome]   NUMERIC (18)  NOT NULL,
     [BaseGarrison] INT           NOT NULL,
     [BaseSoldiers] INT           NOT NULL,
+    [BaseCost] INT NOT NULL, 
+    [SettlementTypeId] INT NOT NULL, 
     CONSTRAINT [PK_BuildingTypes] PRIMARY KEY CLUSTERED ([Id] ASC), 
     CONSTRAINT [CK_BuildingTypes_BaseGarrison] CHECK ([BaseGarrison] >= 0), 
     CONSTRAINT [CK_BuildingTypes_BaseSoldiers] CHECK ([BaseSoldiers] >= 0), 
     CONSTRAINT [CK_BuildingTypes_BaseIncome] CHECK ([BaseIncome] >= 0)
 );
 
+
+GO
+
+CREATE UNIQUE INDEX [UQ_BuildingTypes_Name] ON [dbo].[BuildingTypes] ([Name])

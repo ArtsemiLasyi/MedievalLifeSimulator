@@ -2,5 +2,6 @@
 AS
     UPDATE
         [HumanWealths] 
-    SET [GoldNumber] = [GoldNumber] + GetIncomeFor([HumanWealths].[HumanId])
+    SET 
+        [GoldNumber] = [GoldNumber] + GetGoldIncomeFor([HumanWealths].[HumanId])
 RETURN 0;

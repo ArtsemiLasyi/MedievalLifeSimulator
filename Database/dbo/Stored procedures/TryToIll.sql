@@ -1,5 +1,23 @@
 ﻿CREATE PROCEDURE [dbo].[HumanTryToIll]
     @humanId bigint
 AS
-    SELECT @param1, @param2
-RETURN 0
+BEGIN
+    IF(
+        EXISTS(
+            SELECT
+                *
+            FROM
+                [Epidemics]
+            JOIN [SettlementEpidemics]
+                ON [Epidemics].[Id] = [SettlementEpidemics].[EpidemicId]
+            JOIN [Humans]
+                ON [Humans].[SettlementLocationId] = [SettlementEpidemics].[SettlementId]
+            WHERE
+                [Humans].[Id] = @humanId
+
+        )
+    )
+    BEGIN
+        DECLARE @result BIT = GetResultFromProbability(30);
+    END;
+END;

@@ -4,3 +4,6 @@
     CONSTRAINT [PK_SettlementTypes] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
+GO
+
+CREATE UNIQUE INDEX [UQ_SettlementTypes_Name] ON [dbo].[EventTypes] ([Name])
